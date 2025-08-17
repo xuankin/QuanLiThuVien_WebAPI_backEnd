@@ -1,0 +1,20 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations; // Thêm namespace này để dùng [Key]
+namespace LibraryManagementApi.Models // Thêm namespace này
+{
+public class PhieuTra
+{
+    [Key]
+    public int MaPhieuTra { get; set; }
+    public int MaPhieuMuon { get; set; }
+    public int MaNhanVien { get; set; }
+    public DateTime NgayTra { get; set; }
+
+    public PhieuMuon PhieuMuon { get; set; }
+    public NhanVien NhanVien { get; set; }
+}
+}
