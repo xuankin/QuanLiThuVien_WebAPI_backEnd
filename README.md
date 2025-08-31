@@ -71,11 +71,4 @@ Một số API chính của hệ thống:
 - `POST /api/return` → Trả sách
 - `GET /api/borrow/history` → Xem lịch sử mượn sách
 
-📂 Cấu trúc thư mục chính
-LibraryManagementApi/
-│-- Controllers/         # Chứa các API Controller
-│-- Data/                # DbContext và cấu hình database
-│-- Models/              # Các entity class (Book, User, BorrowRecord,...)
-│-- Migrations/          # EF Core Migration files
-│-- Program.cs           # File khởi tạo ứng dụng
-│-- appsettings.json 
+
